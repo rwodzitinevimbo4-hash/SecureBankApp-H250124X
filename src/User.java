@@ -15,11 +15,11 @@ public class User {
     /** How long a locked user must wait: 5 minutes, in milliseconds. */
     public static final long LOCK_DURATION_MS = 5L * 60 * 1000;
 
-    private final String username;      // 'final' = can never change after creation
-    private final String salt;          // random value used when scrambling the password
-    private final String passwordHash;  // the scrambled password fingerprint
-    private int failedAttempts;         // wrong passwords entered in a row
-    private long lockedUntilMillis;     // time (ms since 1970) until which login is blocked; 0 = not locked
+    private final String username;      
+    private final String salt;          
+    private final String passwordHash;  
+    private int failedAttempts;         
+    private long lockedUntilMillis;     
 
     /** Constructor: runs when we write "new User(...)" and fills in the fields. */
     public User(String username, String salt, String passwordHash,

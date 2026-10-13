@@ -1,0 +1,7 @@
+out/
+*.class
+*.tmp
+/data/
+/users*.txt
+/accounts*.txt
+/transactions*.txt
